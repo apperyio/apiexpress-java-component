@@ -25,6 +25,14 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>io.appery.apiexpress</groupId>
+            <artifactId>java-component-interface</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/repo/io/appery/apiexpress/1.0.0/java-component-interface-1.0.0.jar</systemPath>
+        </dependency>
     </dependencies>
 
     <build>
@@ -43,4 +51,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
