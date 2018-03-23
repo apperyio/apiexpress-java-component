@@ -14,7 +14,7 @@ public class JavaComponentTest {
         ObjectNode objectNode = mapper.createObjectNode();
         objectNode.put("name", "alex");
 
-        ObjectNode result = new JavaComponentImpl().execute(objectNode);
+        ObjectNode result = (ObjectNode)new JavaComponentImpl().execute(objectNode);
         
         Assert.assertEquals(result.get("name").textValue(), "alex");
         Assert.assertEquals(result.get("age").asInt(), 20);
